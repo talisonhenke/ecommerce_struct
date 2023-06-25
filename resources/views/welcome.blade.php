@@ -8,6 +8,7 @@
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-icons-1.10.5/font/bootstrap-icons.css">
   <style type="text/css">
     @media only screen and (min-width: 767px){
       .dropdown:hover .dropdown-menu{
@@ -42,7 +43,7 @@
             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Categorias
             </a>
-            <ul class="dropdown-menu col-xxl-8 col-xl-8 col-lg-8 col-md-4 col-sm-4">
+            <ul class="dropdown-menu dropdown-menu-custom">
               <li><a class="dropdown-item text-dark" href="#">Informática</a></li>
               <li><a class="dropdown-item text-dark" href="#">Utilidades domésticas</a></li>
               {{-- <li><hr class="dropdown-divider"></li> --}}
@@ -111,158 +112,95 @@
     <!-- ========================= SECTION  END// ========================= -->
 
     <section class="section-products">
-      <div class="container">
+      <div class="">
           <div class="row justify-content-center text-center">
               <div class="col-md-8 col-lg-6">
                   <div class="header">
-                      <h3>Featured Product</h3>
-                      <h2>Popular Products</h2>
+                      <h3>Todos produtos</h3>
+                      <h2>Mais populares</h2>
                   </div>
               </div>
           </div>
-          <div class="row">
-              <!-- Single Product -->
+          {{-- sessão reservada para produtos --}}
+
+          {{-- responsividade dos cards na classe row --}}
+          {{-- row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 --}}
+          <div class="row row-cols-sm-12 row-cols-md-6 row-cols-lg-4 row-cols-xl-3">
+              <!-- Card produto padrão -->
+              {{-- responsividade dos cards na div do card --}}
+              {{-- col-md-6 col-lg-4 col-xl-3 --}}
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-1" class="single-product">
                       <div class="product_card_icons">
                         <img src="images/product-example/notebook.webp" alt="" class="product_thumbnail">
                           <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                              <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                              <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
+                              <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                              <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
                           </ul>
                       </div>
                       <div class="product_card_info">
                           <h3 class="product-title">Notebook Samsung Book X20 Np550 Core I5-10210u Ram 4gb Hd 1tb Ssd 120gb Tela 15.6'</h3>
-                          <h4 class="product-old-price">$79.99</h4>
-                          <h4 class="product-price">$49.99</h4>
+                          <h4 class="product-old-price">R$3.999.99</h4>
+                          <h4 class="product-price">R$3.479.99</h4>
                       </div>
                   </div>
               </div>
-              <!-- Single Product -->
+              <!-- Card produto com desconto -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-2" class="single-product">
                       <div class="product_card_icons">
+                        <img src="images/fone-sf.webp" alt="" class="product_thumbnail">
                           <span class="discount">15% off</span>
                           <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                            <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
                           </ul>
                       </div>
                       <div class="product_card_info">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-price">$49.99</h4>
+                          <h3 class="product-title">Fone ouvido sem fio BLUETOOTH Celular PEQUENO DISCRETO ALTO</h3>
+                          <h4 class="product-price">R$55.10</h4>
                       </div>
                   </div>
               </div>
-              <!-- Single Product -->
+              <!-- Card produto padrão -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-3" class="single-product">
                       <div class="product_card_icons">
+                        <img src="images/carregador.webp" alt="" class="product_thumbnail">
                           <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                            <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
                           </ul>
                       </div>
                       <div class="product_card_info">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-old-price">$79.99</h4>
-                          <h4 class="product-price">$49.99</h4>
+                          <h3 class="product-title">CARREGADOR TURBO ALTOMEX USB</h3>
+                          <h4 class="product-old-price">R$24.99</h4>
+                          <h4 class="product-price">R$17.40</h4>
                       </div>
                   </div>
               </div>
-              <!-- Single Product -->
+              <!-- Card produto novo -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-4" class="single-product">
                       <div class="product_card_icons">
-                          <span class="new">new</span>
+                        <img src="images/cx-de-som.webp" alt="" class="product_thumbnail">
+                          <span class="new">Novo</span>
                           <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
+                            <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                            <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
                           </ul>
                       </div>
                       <div class="product_card_info">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-1" class="single-product">
-                      <div class="product_card_icons">
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="product_card_info">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-old-price">$79.99</h4>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-2" class="single-product">
-                      <div class="product_card_icons">
-                          <span class="discount">15% off</span>
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="product_card_info">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-3" class="single-product">
-                      <div class="product_card_icons">
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="product_card_info">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-old-price">$79.99</h4>
-                          <h4 class="product-price">$49.99</h4>
-                      </div>
-                  </div>
-              </div>
-              <!-- Single Product -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-4" class="single-product">
-                      <div class="product_card_icons">
-                          <span class="new">new</span>
-                          <ul>
-                              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                              <li><a href="#"><i class="fas fa-plus"></i></a></li>
-                              <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                          </ul>
-                      </div>
-                      <div class="product_card_info">
-                          <h3 class="product-title">Here Product Title</h3>
-                          <h4 class="product-price">$49.99</h4>
+                          <h3 class="product-title">CAIXA DE SOM SABALA DR-102</h3>
+                          <h4 class="product-price">R$461.25</h4>
                       </div>
                   </div>
               </div>
@@ -272,17 +210,17 @@
     
     
     <!-- ========================= SECTION  ========================= -->
-    <section class="section-name padding-y bg">
+    <section class="section-name padding-y bg text-white lower-section">
     <div class="container">
     
     <div class="row">
     <div class="col-md-6">
-        <h3>Download app demo text</h3>
-        <p>Get an amazing app  to make Your life easy</p>
+        <h3 class="fw-bold">Baixe nosso app</h3>
+        <p class="fw-bold">Compre com mais facilidade e fique por dentro das novidades</p>
     </div>
     <div class="col-md-6 text-md-end">
-        <a href="#"><img src="assets/images/misc/appstore.png" height="40"></a>
-        <a href="#"><img src="assets/images/misc/appstore.png" height="40"></a>
+        <a href="#"><img src="images/playstore-icon.webp" height="40"></a>
+        <a href="#"><img src="images/app-store.png" height="40"></a>
     </div>
     </div> <!-- row.// -->
     </div><!-- container // -->
@@ -292,55 +230,53 @@
     
     
     <!-- ========================= FOOTER ========================= -->
-  <footer class="section-footer border-top bg">
+  <footer class="section-footer border-top bg-dark text-white">
     <div class="container">
       <section class="footer-top  padding-y">
         <div class="row">
           <aside class="col-md col-6">
-            <h6 class="title">Brands</h6>
+            <h6 class="ft-title">Marcas</h6>
             <ul class="list-unstyled">
-              <li> <a href="#">Adidas</a></li>
-              <li> <a href="#">Puma</a></li>
-              <li> <a href="#">Reebok</a></li>
-              <li> <a href="#">Nike</a></li>
+              <li> <a href="#">Samsung</a></li>
+              <li> <a href="#">Apple</a></li>
+              <li> <a href="#">JBL</a></li>
+              <li> <a href="#">Sony</a></li>
             </ul>
           </aside>
           <aside class="col-md col-6">
-            <h6 class="title">Company</h6>
+            <h6 class="ft-title">Nome da loja</h6>
             <ul class="list-unstyled">
-              <li> <a href="#">About us</a></li>
-              <li> <a href="#">Career</a></li>
+              <li> <a href="#">Página inicial</a></li>
+              <li> <a href="#">Sobre nós</a></li>
               <li> <a href="#">Find a store</a></li>
-              <li> <a href="#">Rules and terms</a></li>
-              <li> <a href="#">Sitemap</a></li>
+              <li> <a href="#">Termos e condiçoes</a></li>
+              <li> <a href="#">Contato</a></li>
             </ul>
           </aside>
           <aside class="col-md col-6">
-            <h6 class="title">Help</h6>
+            <h6 class="ft-title">Ajuda</h6>
             <ul class="list-unstyled">
-              <li> <a href="#">Contact us</a></li>
-              <li> <a href="#">Money refund</a></li>
-              <li> <a href="#">Order status</a></li>
-              <li> <a href="#">Shipping info</a></li>
-              <li> <a href="#">Open dispute</a></li>
+              <li> <a href="#">Contato</a></li>
+              <li> <a href="#">Avaliações</a></li>
+              <li> <a href="#">Reclamações</a></li>
+              <li> <a href="#">Sugestões</a></li>
             </ul>
           </aside>
           <aside class="col-md col-6">
-            <h6 class="title">Account</h6>
+            <h6 class="ft-title">Conta</h6>
             <ul class="list-unstyled">
-              <li> <a href="#"> User Login </a></li>
-              <li> <a href="#"> User register </a></li>
-              <li> <a href="#"> Account Setting </a></li>
-              <li> <a href="#"> My Orders </a></li>
+              <li> <a href="#"> Entrar </a></li>
+              <li> <a href="#"> Cadastrar-se </a></li>
+              <li> <a href="#"> Seu perfil </a></li>
+              <li> <a href="#"> Seus pedidos </a></li>
             </ul>
           </aside>
           <aside class="col-md">
-            <h6 class="title">Social</h6>
+            <h6 class="ft-title">Social</h6>
             <ul class="list-unstyled">
-              <li><a href="#"> <i class="fab fa-facebook"></i> Facebook </a></li>
-              <li><a href="#"> <i class="fab fa-twitter"></i> Twitter </a></li>
-              <li><a href="#"> <i class="fab fa-instagram"></i> Instagram </a></li>
-              <li><a href="#"> <i class="fab fa-youtube"></i> Youtube </a></li>
+              <li><a href="#"> <i class="bi bi-facebook icon-facebook"></i> Facebook </a></li>
+              <li><a href="#"> <i class="bi bi-instagram icon-instagram"></i> Instagram </a></li>
+              <li><a href="#"> <i class="bi bi-youtube icon-youtube"></i> Youtube </a></li>
             </ul>
           </aside>
         </div> <!-- row.// -->
@@ -348,16 +284,16 @@
   
       <section class="footer-bottom row">
         <div class="col-md-2">
-          <p class="text-muted">   2021 Company name </p>
+          <p class="text-muted"> 2023 Nome da loja </p>
         </div>
         <div class="col-md-8 text-md-center">
-          <span  class="px-2">info@com</span>
+          <span  class="px-2">nomedaloja@com</span>
           <span  class="px-2">+000-000-0000</span>
-          <span  class="px-2">Street name 123, ABC</span>
+          <span  class="px-2">Endereço, Brasil, RS</span>
         </div>
         <div class="col-md-2 text-md-end text-muted">
           <i class="fab fa-lg fa-cc-visa"></i> 
-          <i class="fab fa-lg fa-cc-paypal"></i> 
+          <i class="bi bi-paypal"></i>
           <i class="fab fa-lg fa-cc-mastercard"></i>
         </div>
       </section>

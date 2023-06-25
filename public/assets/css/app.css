@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 .section-products {
-    padding: 80px 0 54px;
+    /* padding: 80px 0 54px; */
 }
 
 .section-products .header {
@@ -22,13 +22,22 @@
 
 .section-products .single-product {
     margin-bottom: 26px;
+    border: solid 1px #000000;
+    /* max-width: 288px; */
+    height: 376.75;
+    overflow: hidden;
 }
 
+/* @media only screen and (max-width: 575px) {
+    .section-products {
+      margin: 0 auto;
+    }
+} */
 .section-products .single-product .product_card_icons {
     position: relative;
     height: 290px;
     max-height: 290px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     overflow: hidden;
 }
 
@@ -43,35 +52,18 @@
 		transition: all 0.3s;
 }
 /* rotaçao das images no card produto */
-.section-products .single-product:hover .product_card_icons::before {
-		transform: scale(1.2,1.2) rotate(5deg);
-}
-
-.section-products #product-1:hover .product_card_icons .product_thumbnail {
+.section-products .product_card_icons:hover .product_thumbnail {
     transform: scale(1.2,1.2) rotate(5deg);
+    opacity: 0.8;
 }
 
-.section-products #product-1 .product_card_icons .product_thumbnail{
-    position: relative;
+/* ajusta a imagem no card e aplica a animação suave */
+.section-products .product_card_icons .product_thumbnail{
+    position: absolute;
 		width: 100%;
 		height: 100%;
 		z-index: -1;
 		transition: all 0.3s;
-}
-
-.section-products #product-2 .product_card_icons::before {
-    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.section-products #product-3 .product_card_icons::before {
-    background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.section-products #product-4 .product_card_icons::before {
-    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
-    background-size: cover;
 }
 
 .section-products .single-product .product_card_icons .discount,
@@ -86,32 +78,36 @@
     font-size: 0.85rem;
 }
 
+/* ícone de produto novo */
 .section-products .single-product .product_card_icons .new {
     left: 0;
     background-color: #444444;
 }
 
+/* ícones dos cards começam em baixo e sobem com o hover do card */
 .section-products .single-product .product_card_icons ul {
     position: absolute;
     bottom: -41px;
-    left: 20px;
-    margin: 0;
+    left: 10%;
+    width: 100%;
+    margin: 0 auto;
     padding: 0;
     list-style: none;
     opacity: 0;
     transition: bottom 0.5s, opacity 0.5s;
 }
-
+/* posiciona os icones do card para cima quando o mose está em cima */
 .section-products .single-product:hover .product_card_icons ul {
     bottom: 30px;
     opacity: 1;
 }
-
+/* posiciona os ícones do card lado a lado e define o espaçamento entre eles */
 .section-products .single-product .product_card_icons ul li {
     display: inline-block;
-    margin-right: 4px;
+    width: 20%;
+    text-align: center;
 }
-
+/* define o estilo do ícone do cart */
 .section-products .single-product .product_card_icons ul li a {
     display: inline-block;
     width: 40px;
@@ -120,28 +116,43 @@
     background-color: #ffffff;
     color: #444444;
     text-align: center;
-    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    /* box-shadow: 0 2px 20px rgb(50 50 50 / 10%); */
     transition: color 0.2s;
 }
-
+/* define o estilo do ícone do cart com o mouse em cima*/
 .section-products .single-product .product_card_icons ul li a:hover {
     color: #fe302f;
 }
+/* estilo do svg */
+/* .section-products .single-product .product_card_icons ul li a i{
+    font-size: 20px; 
+} */
 
 .section-products .single-product .product_card_info .product-title {
-    font-size: 1rem;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    height: 57px;
+    max-height: 57px;
+    overflow: hidden;
+    overflow-wrap: break-word; /* 99 characters */
+}
+
+.section-products .single-product .product_card_info {
+    background: rgba(63, 63, 63, 0.1);
 }
 
 .section-products .single-product .product_card_info h4 {
     display: inline-block;
-    font-size: 1rem;
 }
 
 .section-products .single-product .product_card_info .product-old-price {
+    font-size: 20px;
     position: relative;
-    padding: 0 7px;
-    margin-right: 2px;
+    padding: 0;
+    margin: 0 0 0 10px;
     opacity: 0.6;
+    color: #ff0000;
 }
 
 .section-products .single-product .product_card_info .product-old-price::after {
@@ -151,6 +162,57 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: #444444;
+    background-color: #000000;
     transform: translateY(-50%);
+}
+
+.section-products .single-product .product_card_info .product-price {
+    font-size: 22px;
+    position: relative;
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+
+/* ícones cores */
+.icon-facebook{
+    color: #3B5998;
+}
+
+.icon-youtube{
+    color: #fe302f;
+}
+
+.icon-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* change this to change the size*/
+    /* font-size: 200px;  */
+    
+}
+
+
+
+.lower-section{
+    background-color: #000000;
+}
+
+.ft-title{
+    font-weight: bold;
+}
+
+div aside .list-unstyled li a{
+ text-decoration: none;
+}
+
+div aside .list-unstyled li a:hover{
+    color: yellow;
+}
+
+/* MENU SUPERIOR HOVER */
+
+.dropdown-menu-custom{
+    width: 350px;
 }
