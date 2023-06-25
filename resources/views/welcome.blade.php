@@ -124,7 +124,8 @@
               <!-- Single Product -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-1" class="single-product">
-                      <div class="part-1">
+                      <div class="product_card_icons">
+                        <img src="images/product-example/notebook.webp" alt="" class="product_thumbnail">
                           <ul>
                               <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
                               <li><a href="#"><i class="fas fa-heart"></i></a></li>
@@ -132,7 +133,7 @@
                               <li><a href="#"><i class="fas fa-expand"></i></a></li>
                           </ul>
                       </div>
-                      <div class="part-2">
+                      <div class="product_card_info">
                           <h3 class="product-title">Notebook Samsung Book X20 Np550 Core I5-10210u Ram 4gb Hd 1tb Ssd 120gb Tela 15.6'</h3>
                           <h4 class="product-old-price">$79.99</h4>
                           <h4 class="product-price">$49.99</h4>
@@ -142,7 +143,7 @@
               <!-- Single Product -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-2" class="single-product">
-                      <div class="part-1">
+                      <div class="product_card_icons">
                           <span class="discount">15% off</span>
                           <ul>
                               <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
@@ -151,7 +152,7 @@
                               <li><a href="#"><i class="fas fa-expand"></i></a></li>
                           </ul>
                       </div>
-                      <div class="part-2">
+                      <div class="product_card_info">
                           <h3 class="product-title">Here Product Title</h3>
                           <h4 class="product-price">$49.99</h4>
                       </div>
@@ -160,7 +161,7 @@
               <!-- Single Product -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-3" class="single-product">
-                      <div class="part-1">
+                      <div class="product_card_icons">
                           <ul>
                               <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
                               <li><a href="#"><i class="fas fa-heart"></i></a></li>
@@ -168,7 +169,7 @@
                               <li><a href="#"><i class="fas fa-expand"></i></a></li>
                           </ul>
                       </div>
-                      <div class="part-2">
+                      <div class="product_card_info">
                           <h3 class="product-title">Here Product Title</h3>
                           <h4 class="product-old-price">$79.99</h4>
                           <h4 class="product-price">$49.99</h4>
@@ -178,7 +179,7 @@
               <!-- Single Product -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-4" class="single-product">
-                      <div class="part-1">
+                      <div class="product_card_icons">
                           <span class="new">new</span>
                           <ul>
                               <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
@@ -187,7 +188,7 @@
                               <li><a href="#"><i class="fas fa-expand"></i></a></li>
                           </ul>
                       </div>
-                      <div class="part-2">
+                      <div class="product_card_info">
                           <h3 class="product-title">Here Product Title</h3>
                           <h4 class="product-price">$49.99</h4>
                       </div>
@@ -196,7 +197,7 @@
               <!-- Single Product -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-1" class="single-product">
-                      <div class="part-1">
+                      <div class="product_card_icons">
                           <ul>
                               <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
                               <li><a href="#"><i class="fas fa-heart"></i></a></li>
@@ -204,7 +205,7 @@
                               <li><a href="#"><i class="fas fa-expand"></i></a></li>
                           </ul>
                       </div>
-                      <div class="part-2">
+                      <div class="product_card_info">
                           <h3 class="product-title">Here Product Title</h3>
                           <h4 class="product-old-price">$79.99</h4>
                           <h4 class="product-price">$49.99</h4>
@@ -214,7 +215,7 @@
               <!-- Single Product -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-2" class="single-product">
-                      <div class="part-1">
+                      <div class="product_card_icons">
                           <span class="discount">15% off</span>
                           <ul>
                               <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
@@ -223,7 +224,7 @@
                               <li><a href="#"><i class="fas fa-expand"></i></a></li>
                           </ul>
                       </div>
-                      <div class="part-2">
+                      <div class="product_card_info">
                           <h3 class="product-title">Here Product Title</h3>
                           <h4 class="product-price">$49.99</h4>
                       </div>
@@ -232,7 +233,7 @@
               <!-- Single Product -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-3" class="single-product">
-                      <div class="part-1">
+                      <div class="product_card_icons">
                           <ul>
                               <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
                               <li><a href="#"><i class="fas fa-heart"></i></a></li>
@@ -240,7 +241,7 @@
                               <li><a href="#"><i class="fas fa-expand"></i></a></li>
                           </ul>
                       </div>
-                      <div class="part-2">
+                      <div class="product_card_info">
                           <h3 class="product-title">Here Product Title</h3>
                           <h4 class="product-old-price">$79.99</h4>
                           <h4 class="product-price">$49.99</h4>
@@ -250,7 +251,7 @@
               <!-- Single Product -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-4" class="single-product">
-                      <div class="part-1">
+                      <div class="product_card_icons">
                           <span class="new">new</span>
                           <ul>
                               <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
@@ -259,7 +260,7 @@
                               <li><a href="#"><i class="fas fa-expand"></i></a></li>
                           </ul>
                       </div>
-                      <div class="part-2">
+                      <div class="product_card_info">
                           <h3 class="product-title">Here Product Title</h3>
                           <h4 class="product-price">$49.99</h4>
                       </div>
