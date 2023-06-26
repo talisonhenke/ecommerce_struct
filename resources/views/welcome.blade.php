@@ -126,13 +126,14 @@
           {{-- responsividade dos cards na classe row --}}
           {{-- row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 --}}
           <div class="row row-cols-sm-12 row-cols-md-6 row-cols-lg-4 row-cols-xl-3">
-              <!-- Card produto padrão -->
+              <!-- Card produto com desconto -->
               {{-- responsividade dos cards na div do card --}}
               {{-- col-md-6 col-lg-4 col-xl-3 --}}
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-1" class="single-product">
                       <div class="product_card_icons">
                         <img src="images/product-example/notebook.webp" alt="" class="product_thumbnail">
+                        <span class="discount">-15%</span>
                           <ul>
                               <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
                               <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
@@ -143,16 +144,15 @@
                       <div class="product_card_info">
                           <h3 class="product-title">Notebook Samsung Book X20 Np550 Core I5-10210u Ram 4gb Hd 1tb Ssd 120gb Tela 15.6'</h3>
                           <h4 class="product-old-price">R$3.999.99</h4>
-                          <h4 class="product-price">R$3.479.99</h4>
+                          <h4 class="product-price">R$3.399.00</h4>
                       </div>
                   </div>
               </div>
-              <!-- Card produto com desconto -->
+              <!-- Card produto padrão -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-2" class="single-product">
                       <div class="product_card_icons">
                         <img src="images/fone-sf.webp" alt="" class="product_thumbnail">
-                          <span class="discount">15% off</span>
                           <ul>
                             <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
                             <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
@@ -166,11 +166,12 @@
                       </div>
                   </div>
               </div>
-              <!-- Card produto padrão -->
+              <!-- Card produto com desconto -->
               <div class="col-md-6 col-lg-4 col-xl-3">
                   <div id="product-3" class="single-product">
                       <div class="product_card_icons">
                         <img src="images/carregador.webp" alt="" class="product_thumbnail">
+                        <span class="discount">-30%</span>
                           <ul>
                             <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
                             <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
@@ -181,7 +182,7 @@
                       <div class="product_card_info">
                           <h3 class="product-title">CARREGADOR TURBO ALTOMEX USB</h3>
                           <h4 class="product-old-price">R$24.99</h4>
-                          <h4 class="product-price">R$17.40</h4>
+                          <h4 class="product-price">R$17.49</h4>
                       </div>
                   </div>
               </div>
@@ -204,6 +205,81 @@
                       </div>
                   </div>
               </div>
+              <!-- Card produto padrão -->
+              <div class="col-md-6 col-lg-4 col-xl-3">
+                <div id="product-1" class="single-product">
+                    <div class="product_card_icons">
+                      <img src="images/smartwatch.jpg" alt="" class="product_thumbnail">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                            <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_card_info">
+                        <h3 class="product-title">Smartband HUAWEI Band 8, Design Ultra-fino, 14 dias de duração da bateria</h3>
+                        <h4 class="product-price">R$229.00</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Card produto padrão -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div id="product-2" class="single-product">
+                    <div class="product_card_icons">
+                      <img src="images/controle.jpg" alt="" class="product_thumbnail">
+                        <ul>
+                          <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                          <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
+                          <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                          <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_card_info">
+                        <h3 class="product-title">Controle remoto universal para todos os televisores Samsung, substituição para todos os televisores LCD LED HDTV 3D Smart Samsung</h3>
+                        <h4 class="product-price">R$19.99</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Card produto novo -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div id="product-4" class="single-product">
+                  <div class="product_card_icons">
+                    <img src="images/furadeira.jpg" alt="" class="product_thumbnail">
+                      <span class="new">Novo</span>
+                      <ul>
+                        <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                        <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
+                        <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                        <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                      </ul>
+                  </div>
+                  <div class="product_card_info">
+                      <h3 class="product-title">Skil Furadeira De Impacto 6600 570W 220V Com Chave De Mandril</h3>
+                      <h4 class="product-price">R$170.00</h4>
+                  </div>
+              </div>
+          </div>
+            <!-- Card produto com desconto -->
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div id="product-3" class="single-product">
+                    <div class="product_card_icons">
+                      <img src="images/teclado-mouse.jpg" alt="" class="product_thumbnail">
+                      <span class="discount">-20%</span>
+                        <ul>
+                          <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                          <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
+                          <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                          <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product_card_info">
+                        <h3 class="product-title">Teclado e Mouse Sem Fio 2.4 Ghz Multimídia USB Slim - TC202</h3>
+                        <h4 class="product-old-price">R$199.99</h4>
+                        <h4 class="product-price">R$159.99</h4>
+                    </div>
+                </div>
+            </div>
           </div>
       </div>
   </section>
