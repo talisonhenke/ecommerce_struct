@@ -16,3 +16,4 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+/public/bootstrap-icons-1.10.5
