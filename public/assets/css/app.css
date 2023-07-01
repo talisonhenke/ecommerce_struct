@@ -23,7 +23,7 @@
 .section-products .single-product {
     margin-bottom: 26px;
     border: solid 1px #000000;
-    /* max-width: 288px; */
+    /* min-width: 200px; */
     height: 376.75;
     overflow: hidden;
 }
@@ -88,10 +88,10 @@
 .section-products .single-product .product_card_icons ul {
     position: absolute;
     bottom: -41px;
+    width: 80%;
     left: 10%;
-    width: 100%;
-    margin: 0 auto;
     padding: 0;
+    margin: 0;
     list-style: none;
     opacity: 0;
     transition: bottom 0.5s, opacity 0.5s;
@@ -104,20 +104,26 @@
 /* posiciona os ícones do card lado a lado e define o espaçamento entre eles */
 .section-products .single-product .product_card_icons ul li {
     display: inline-block;
-    width: 20%;
-    text-align: center;
+    width: 25%;
+    margin: 0 -5px 0 0;
+    padding: 0;
+    /* text-align: center; */
 }
 /* define o estilo do ícone do cart */
 .section-products .single-product .product_card_icons ul li a {
+    position: relative;
     display: inline-block;
-    width: 40px;
+    width: 70%;
     height: 40px;
     line-height: 40px;
     background-color: #ffffff;
     color: #444444;
     text-align: center;
+    left: 15%;
     /* box-shadow: 0 2px 20px rgb(50 50 50 / 10%); */
     transition: color 0.2s;
+    margin: 0;
+    padding: 0;
 }
 /* define o estilo do ícone do cart com o mouse em cima*/
 .section-products .single-product .product_card_icons ul li a:hover {
