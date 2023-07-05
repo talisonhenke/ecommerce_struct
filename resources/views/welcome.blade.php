@@ -18,7 +18,7 @@
   }
   </style>
 </head>
-<body style="min-width: 372px;">
+<body style="min-width: 280px;">
 
   <header class="py-3 mb-2 border-bottom bg-dark">
     <div class="container d-flex flex-wrap justify-content-center">
@@ -143,7 +143,7 @@
                           </ul>
                       </div>
                       <div class="product_card_info">
-                          <h3 class="product-title">Notebook Samsung Book X20 Np550 Core I5-10210u Ram 4gb Hd 1tb Ssd 120gb Tela 15.6'</h3>
+                          <h3 class="product-title"><a href="/product_details">Notebook Samsung Book X20 Np550 Core I5-10210u Ram 4gb Hd 1tb Ssd 120gb Tela 15.6'</a></h3>
                           <h4 class="product-old-price">R$3.999.99</h4>
                           <h4 class="product-price">R$3.399.00</h4>
                       </div>
