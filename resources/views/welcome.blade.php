@@ -23,7 +23,7 @@
   <header class="py-3 mb-2 border-bottom bg-dark">
     <div class="container d-flex flex-wrap justify-content-center">
       <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none text-white">
-        <img src="images/icons8-shop-100.png" alt="" style="width:40px" class="rounded-pill bg-white me-1">
+        <img src="images/icons8-shop-100.png" alt="" style="width:40px" class="rounded-4-pill bg-white me-1">
         <span class="fs-4">Nome da loja</span>
       </a>
       <form class="col-12 col-lg-8 mb-3 mb-lg-0" role="search">
@@ -131,10 +131,10 @@
               {{-- responsividade dos cards na div do card --}}
               {{-- col-md-6 col-lg-4 col-xl-3 --}}
               <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-1" class="single-product">
+                  <div id="product-1" class="single-product rounded-4">
                       <div class="product_card_icons">
                         <img src="images/product-example/notebook.webp" alt="" class="product_thumbnail">
-                        <span class="discount">-15%</span>
+                        <span class="discount rounded-2">-15%</span>
                           <ul>
                               <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
                               <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
@@ -151,7 +151,7 @@
               </div>
               <!-- Card produto padrão -->
               <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-2" class="single-product">
+                  <div id="product-2" class="single-product rounded-4">
                       <div class="product_card_icons">
                         <img src="images/fone-sf.webp" alt="" class="product_thumbnail">
                           <ul>
@@ -169,10 +169,10 @@
               </div>
               <!-- Card produto com desconto -->
               <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-3" class="single-product">
+                  <div id="product-3" class="single-product rounded-4">
                       <div class="product_card_icons">
                         <img src="images/carregador.webp" alt="" class="product_thumbnail">
-                        <span class="discount">-30%</span>
+                        <span class="discount rounded-2">-30%</span>
                           <ul>
                             <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
                             <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
@@ -189,10 +189,10 @@
               </div>
               <!-- Card produto novo -->
               <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-4" class="single-product">
+                  <div id="product-4" class="single-product rounded-4">
                       <div class="product_card_icons">
                         <img src="images/cx-de-som.webp" alt="" class="product_thumbnail">
-                          <span class="new">Novo</span>
+                          <span class="new rounded-2">Novo</span>
                           <ul>
                             <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
                             <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
@@ -208,7 +208,7 @@
               </div>
               <!-- Card produto padrão -->
               <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-1" class="single-product">
+                <div id="product-1" class="single-product rounded-4">
                     <div class="product_card_icons">
                       <img src="images/smartwatch.jpg" alt="" class="product_thumbnail">
                         <ul>
@@ -226,7 +226,7 @@
             </div>
             <!-- Card produto padrão -->
             <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-2" class="single-product">
+                <div id="product-2" class="single-product rounded-4">
                     <div class="product_card_icons">
                       <img src="images/controle.jpg" alt="" class="product_thumbnail">
                         <ul>
@@ -244,10 +244,10 @@
             </div>
             <!-- Card produto novo -->
             <div class="col-md-6 col-lg-4 col-xl-3">
-              <div id="product-4" class="single-product">
+              <div id="product-4" class="single-product rounded-4">
                   <div class="product_card_icons">
                     <img src="images/furadeira.jpg" alt="" class="product_thumbnail">
-                      <span class="new">Novo</span>
+                      <span class="new rounded-2">Novo</span>
                       <ul>
                         <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
                         <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
@@ -263,10 +263,10 @@
           </div>
             <!-- Card produto com desconto -->
             <div class="col-md-6 col-lg-4 col-xl-3">
-                <div id="product-3" class="single-product">
+                <div id="product-3" class="single-product rounded-4">
                     <div class="product_card_icons">
                       <img src="images/teclado-mouse.jpg" alt="" class="product_thumbnail">
-                      <span class="discount">-20%</span>
+                      <span class="discount rounded-2">-20%</span>
                         <ul>
                           <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
                           <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>

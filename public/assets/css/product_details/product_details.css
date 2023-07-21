@@ -75,9 +75,8 @@ body {
   cursor: zoom-in;
 }
 
-.product-gallery-featured img {
-  max-width: 500px;
-  max-height: 500px;
+.product-description ul li img {
+  width: 100%;
 }
 
 .product-gallery-thumbnails .thumbnails-list li {

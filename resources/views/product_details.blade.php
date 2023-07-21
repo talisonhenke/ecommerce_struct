@@ -23,9 +23,9 @@
                   <nav class="header-navigation">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item example"><a href="#">Página inicial</a></li>
-                      <li class="breadcrumb-item"><a href="#">Informática</a></li>
-                      <li class="breadcrumb-item"><a href="#">Notebooks</a></li>
-                      <li class="breadcrumb-item active text-truncate" style="max-width: 200px;" aria-current="page">Notebook Samsung Book X20 Np550 Core I5-10210u Ram 4gb Hd 1tb Ssd 120gb Tela 15.6'</li>
+                      <li class="breadcrumb-item d-none d-sm-block"><a href="#">Informática</a></li>
+                      <li class="breadcrumb-item d-none d-sm-block"><a href="#">Notebooks</a></li>
+                      <li class="breadcrumb-item active text-truncate" style="max-width: 150px;" aria-current="page">Notebook Samsung Book X20 Np550 Core I5-10210u Ram 4gb Hd 1tb Ssd 120gb Tela 15.6'</li>
                     </ol>
       
                     <div class="btn-group">
@@ -47,7 +47,7 @@
                         </ol>
                       </div>
                       <div class="product-gallery-featured img-zoom-container">
-                        <img id="mainImg" src="images/product-example/notebook.webp" alt="">
+                        <img id="mainImg" class="img-fluid" src="images/product-example/notebook.webp" alt="">
                       </div>
                     </div>
                   </div>
@@ -59,11 +59,21 @@
                     <p class="mb-0"><i class="fa fa-truck"></i> Entrega em todo o Brasil.</p>
                     <div class="text-muted mb-2"><small>Ver detalhes de pagamento e entrega.</small></div>
                     <label for="quant">Quantidade</label>
-                    <input type="number" name="quantity" min="1" id="quant" class="form-control mb-5 input-lg" placeholder="Escolha quantas unidades você quer">
-                    <button class="btn btn-primary btn-lg btn-block a">Comprar</button>
-                    
+                    <input type="number" name="quantity" min="1" id="quant" class="form-control mb-5 input-lg" placeholder="Quantidade...">
+                    <div class="buy-div text-center">
+                      <button class="btn btn-primary btn-lg btn-block a">Comprar</button> 
+                    </div>
                   </div>
                 </div>
+              </div>
+              <div class="product-description bg-dark">
+                <ul class="list-unstyled col-md-6 col-lg-6 mx-auto">
+                  <li><img class="img-fluid" src="images/product-example/notebook.webp" alt=""></li>
+                  <li><img class="img-fluid" src="images/product-example/not2.webp" alt=""></li>
+                  <li><img class="img-fluid" src="images/product-example/not3.webp" alt=""></li>
+                  <li><img class="img-fluid" src="images/product-example/not4.webp" alt=""></li>
+                  <li><img class="img-fluid" src="images/product-example/not5.webp" alt=""></li>
+                </ul>
               </div>
             </div>
           </div>
