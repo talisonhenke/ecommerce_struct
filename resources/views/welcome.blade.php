@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/app.css">
   {{-- <link rel="stylesheet" type="text/css" href="bootstrap-icons-1.10.5/font/bootstrap-icons.css"> --}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <style type="text/css">
     @media only screen and (min-width: 767px){
       .dropdown:hover .dropdown-menu{
@@ -18,7 +19,7 @@
   }
   </style>
 </head>
-<body style="min-width: 280px;">
+<body style="min-width: 250px;">
 
   <header class="py-3 mb-2 border-bottom bg-dark">
     <div class="container d-flex flex-wrap justify-content-center">
@@ -45,10 +46,17 @@
               Categorias
             </a>
             <ul class="dropdown-menu dropdown-menu-custom">
-              <li><a class="dropdown-item text-dark" href="#">Informática</a></li>
-              <li><a class="dropdown-item text-dark" href="#">Utilidades domésticas</a></li>
+              <li><a class="dropdown-item" href="#">Informática</a></li>
+              <li><a class="dropdown-item" href="#">Utilidades domésticas</a></li>
               {{-- <li><hr class="dropdown-divider"></li> --}}
-              <li><a class="dropdown-item text-dark" href="#">Eletrodomésticos</a></li>
+              <li><a class="dropdown-item" href="#">Eletrodomésticos</a></li>
+              <li><a class="dropdown-item" href="#">Móveis</a></li>
+              <li><a class="dropdown-item" href="#">Telefones & Celulares</a></li>
+              <li><a class="dropdown-item" href="#">Brinquedos</a></li>
+              <li><a class="dropdown-item" href="#">Games</a></li>
+              <li><a class="dropdown-item" href="#">Gift Cards</a></li>
+              <li><a class="dropdown-item" href="#">Livros</a></li>
+              <li><a class="dropdown-item" href="#">Instrumentos Musicais</a></li>
             </ul>
           </li>
           <li class="nav-item d-none d-md-block">
@@ -104,7 +112,7 @@
     
     <!-- ========================= SECTION  ========================= -->
     <section class="section-name padding-y-sm">
-    <div class="container">
+    <div class="container col-12">
     
     <header class="section-heading">
         <h3 class="section-title my-4">Mais vendidos</h3>
@@ -126,158 +134,289 @@
 
           {{-- responsividade dos cards na classe row --}}
           {{-- row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 --}}
-          <div class="row row-cols-sm-12 row-cols-md-6 row-cols-lg-4 row-cols-xl-3">
+          <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6">
               <!-- Card produto com desconto -->
               {{-- responsividade dos cards na div do card --}}
-              {{-- col-md-6 col-lg-4 col-xl-3 --}}
-              <div class="col-md-6 col-lg-4 col-xl-3">
+              {{-- class="col-md-6 col-lg-4 col-xl-3 col-xxl-2" --}}
+              <div>
                   <div id="product-1" class="single-product rounded-4">
                       <div class="product_card_icons">
-                        <img src="images/product-example/notebook.webp" alt="" class="product_thumbnail">
+                        <img src="images/product-example/notebook.webp" alt="" class="product_thumbnail" onmousedown="window.location='/product_details'">
                         <span class="discount rounded-2">-15%</span>
-                          <ul>
-                              <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                          <ul class="justify-content-beetween">
+                              <li><a href="#"><i class="bi bi-cart-fill"></i></a></li>
                               <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
-                              <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
-                              <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
                           </ul>
                       </div>
                       <div class="product_card_info">
                           <h3 class="product-title"><a href="/product_details">Notebook Samsung Book X20 Np550 Core I5-10210u Ram 4gb Hd 1tb Ssd 120gb Tela 15.6'</a></h3>
-                          <h4 class="product-old-price">R$3.999.99</h4>
-                          <h4 class="product-price">R$3.399.00</h4>
+                          <div class="d-flex justify-content-center">
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-half stars-color me-1"></i>
+                            <p class="fw-bold mx-1">(187)</p>
+                          </div>
+                          <div class="discount-info d-flex justify-content-around">
+                            <div class="text-center mx-0 d-inline">
+                              <h4 class="product-old-price text-decoration-line-through">R$ 3.999.99</h4>
+                            </div>
+                            <span class="btn btn-primary btn-sm rounded-4 discount-button mx-0">com desconto</span>
+                          </div>
+                          <div class="d-inline product-payment">
+                            <p>em até 
+                              <span class="fw-bold">10x de R$ 339.90</span>
+                              sem juros ou
+                            </p>
+                          </div>
+                          <h4 class="product-price">R$ 3.399.00</h4>
                       </div>
                   </div>
               </div>
               <!-- Card produto padrão -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
+              <div>
                   <div id="product-2" class="single-product rounded-4">
                       <div class="product_card_icons">
                         <img src="images/fone-sf.webp" alt="" class="product_thumbnail">
                           <ul>
-                            <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                            <li><a href="#"><i class="bi bi-cart-fill"></i></a></li>
                             <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
-                            <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
-                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                            {{-- <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li> --}}
                           </ul>
                       </div>
                       <div class="product_card_info">
                           <h3 class="product-title">Fone ouvido sem fio BLUETOOTH Celular PEQUENO DISCRETO ALTO</h3>
-                          <h4 class="product-price">R$55.10</h4>
+                          <div class="d-flex justify-content-center">
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-half stars-color me-1"></i>
+                            <p class="fw-bold mx-1">(234)</p>
+                          </div>
+
+                          <div class="discount-info"></div>
+                          <div class="d-inline product-payment">
+                            <p>em até 
+                              <span class="fw-bold">10x de R$ 5.01</span>
+                              sem juros ou
+                            </p>
+                          </div>
+                          <h4 class="product-price">R$ 55.10</h4>
                       </div>
                   </div>
               </div>
               <!-- Card produto com desconto -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
+              <div>
                   <div id="product-3" class="single-product rounded-4">
                       <div class="product_card_icons">
                         <img src="images/carregador.webp" alt="" class="product_thumbnail">
                         <span class="discount rounded-2">-30%</span>
                           <ul>
-                            <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                            <li><a href="#"><i class="bi bi-cart-fill"></i></a></li>
                             <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
-                            <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
-                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                            {{-- <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li> --}}
                           </ul>
                       </div>
                       <div class="product_card_info">
                           <h3 class="product-title">CARREGADOR TURBO ALTOMEX USB</h3>
-                          <h4 class="product-old-price">R$24.99</h4>
-                          <h4 class="product-price">R$17.49</h4>
+                          <div class="d-flex justify-content-center">
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-half stars-color me-1"></i>
+                            <p class="fw-bold mx-1">(187)</p>
+                          </div>
+                          <div class="discount-info d-flex justify-content-around">
+                            <div class="text-center">
+                              <h4 class="product-old-price text-decoration-line-through">R$ 24.99</h4>
+                            </div>
+                            <span class="btn btn-primary btn-sm rounded-4 discount-button">com desconto</span>
+                          </div>
+                          <div class="d-inline product-payment">
+                            <p>em até 
+                              <span class="fw-bold">3x de R$ 5.83</span>
+                              sem juros ou
+                            </p>
+                          </div>
+                          <h4 class="product-price">R$ 17.49</h4>
                       </div>
                   </div>
               </div>
               <!-- Card produto novo -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
+              <div>
                   <div id="product-4" class="single-product rounded-4">
                       <div class="product_card_icons">
                         <img src="images/cx-de-som.webp" alt="" class="product_thumbnail">
                           <span class="new rounded-2">Novo</span>
                           <ul>
-                            <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                            <li><a href="#"><i class="bi bi-cart-fill"></i></a></li>
                             <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
-                            <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
-                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                            {{-- <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li> --}}
                           </ul>
                       </div>
                       <div class="product_card_info">
                           <h3 class="product-title">CAIXA DE SOM SABALA DR-102</h3>
-                          <h4 class="product-price">R$461.25</h4>
+                          <div class="d-flex justify-content-center">
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-fill stars-color me-1"></i>
+                            <i class="bi bi-star-half stars-color me-1"></i>
+                            <p class="fw-bold mx-1">(59)</p>
+                          </div>
+                            <div class="discount-info"></div>
+                            <div class="d-inline product-payment">
+                              <p>em até 
+                                <span class="fw-bold">10x de R$ 46.15</span>
+                                sem juros ou
+                              </p>
+                            </div>
+                            <h4 class="product-price">R$ 461.25</h4>
                       </div>
                   </div>
               </div>
               <!-- Card produto padrão -->
-              <div class="col-md-6 col-lg-4 col-xl-3">
+              <div>
                 <div id="product-1" class="single-product rounded-4">
                     <div class="product_card_icons">
                       <img src="images/smartwatch.jpg" alt="" class="product_thumbnail">
                         <ul>
-                            <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                            <li><a href="#"><i class="bi bi-cart-fill"></i></a></li>
                             <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
-                            <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
-                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                            {{-- <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                            <li><a href="#"><i class="bi bi-fullscreen"></i></a></li> --}}
                         </ul>
                     </div>
                     <div class="product_card_info">
                         <h3 class="product-title">Smartband HUAWEI Band 8, Design Ultra-fino, 14 dias de duração da bateria</h3>
-                        <h4 class="product-price">R$229.00</h4>
+                        <div class="d-flex justify-content-center">
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-half stars-color me-1"></i>
+                          <p class="fw-bold mx-1">(369)</p>
+                        </div>
+                        <div class="discount-info"></div>
+                            <div class="d-inline product-payment">
+                              <p>em até 
+                                <span class="fw-bold">10x de R$ 22.90</span>
+                                sem juros ou
+                              </p>
+                            </div>
+                            <h4 class="product-price">R$ 229.00</h4>
                     </div>
                 </div>
             </div>
             <!-- Card produto padrão -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
+            <div>
                 <div id="product-2" class="single-product rounded-4">
                     <div class="product_card_icons">
                       <img src="images/controle.jpg" alt="" class="product_thumbnail">
                         <ul>
-                          <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                          <li><a href="#"><i class="bi bi-cart-fill"></i></a></li>
                           <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
-                          <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
-                          <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                          {{-- <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                          <li><a href="#"><i class="bi bi-fullscreen"></i></a></li> --}}
                         </ul>
                     </div>
                     <div class="product_card_info">
                         <h3 class="product-title">Controle remoto universal para todos os televisores Samsung, substituição para todos os televisores LCD LED HDTV 3D Smart Samsung</h3>
-                        <h4 class="product-price">R$19.99</h4>
+                        <div class="d-flex justify-content-center">
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-half stars-color me-1"></i>
+                          <p class="fw-bold mx-1">(82)</p>
+                        </div>
+                        <div class="discount-info"></div>
+                            <div class="d-inline product-payment">
+                              <p>em até 
+                                <span class="fw-bold">4x de R$ 5.00</span>
+                                sem juros ou
+                              </p>
+                            </div>
+                            <h4 class="product-price">R$ 19.99</h4>
                     </div>
                 </div>
             </div>
             <!-- Card produto novo -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
+            <div>
               <div id="product-4" class="single-product rounded-4">
                   <div class="product_card_icons">
                     <img src="images/furadeira.jpg" alt="" class="product_thumbnail">
                       <span class="new rounded-2">Novo</span>
                       <ul>
-                        <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                        <li><a href="#"><i class="bi bi-cart-fill"></i></a></li>
                         <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
-                        <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
-                        <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                        {{-- <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                        <li><a href="#"><i class="bi bi-fullscreen"></i></a></li> --}}
                       </ul>
                   </div>
                   <div class="product_card_info">
                       <h3 class="product-title">Skil Furadeira De Impacto 6600 570W 220V Com Chave De Mandril</h3>
-                      <h4 class="product-price">R$170.00</h4>
+                      <div class="d-flex justify-content-center">
+                        <i class="bi bi-star-fill stars-color me-1"></i>
+                        <i class="bi bi-star-fill stars-color me-1"></i>
+                        <i class="bi bi-star-fill stars-color me-1"></i>
+                        <i class="bi bi-star-fill stars-color me-1"></i>
+                        <i class="bi bi-star-half stars-color me-1"></i>
+                        <p class="fw-bold mx-1">(94)</p>
+                      </div>
+                      <div class="discount-info"></div>
+                          <div class="d-inline product-payment">
+                            <p>em até 
+                              <span class="fw-bold">10x de R$ 17.00</span>
+                              sem juros ou
+                            </p>
+                          </div>
+                          <h4 class="product-price">R$ 170.00</h4>
                   </div>
               </div>
           </div>
             <!-- Card produto com desconto -->
-            <div class="col-md-6 col-lg-4 col-xl-3">
+            <div>
                 <div id="product-3" class="single-product rounded-4">
                     <div class="product_card_icons">
                       <img src="images/teclado-mouse.jpg" alt="" class="product_thumbnail">
                       <span class="discount rounded-2">-20%</span>
                         <ul>
-                          <li><a href="#"><i class="bi bi-cart-fill"></i></i></a></li>
+                          <li><a href="#"><i class="bi bi-cart-fill"></i></a></li>
                           <li><a href="#"><i class="bi bi-heart-fill"></i></a></li>
-                          <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
-                          <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
+                          {{-- <li><a href="#"><i class="bi bi-plus-square-fill"></i></a></li>
+                          <li><a href="#"><i class="bi bi-fullscreen"></i></a></li> --}}
                         </ul>
                     </div>
                     <div class="product_card_info">
                         <h3 class="product-title">Teclado e Mouse Sem Fio 2.4 Ghz Multimídia USB Slim - TC202</h3>
-                        <h4 class="product-old-price">R$199.99</h4>
-                        <h4 class="product-price">R$159.99</h4>
+                        <div class="d-flex justify-content-center">
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-fill stars-color me-1"></i>
+                          <i class="bi bi-star-half stars-color me-1"></i>
+                          <p class="fw-bold mx-1">(502)</p>
+                        </div>
+                        <div class="discount-info d-flex justify-content-around">
+                          <div class="text-center">
+                            <h4 class="product-old-price text-decoration-line-through">R$ 199.99</h4>
+                          </div>
+                          <span class="btn btn-primary btn-sm rounded-4 discount-button">com desconto</span>
+                        </div>
+                        <div class="d-inline product-payment">
+                          <p>em até 
+                            <span class="fw-bold">10x de R$ 15.90</span>
+                            sem juros ou
+                          </p>
+                        </div>
+                        <h4 class="product-price">R$ 159.99</h4>
                     </div>
                 </div>
             </div>
